@@ -1,0 +1,23 @@
+/*****************************************************************
+
+
+Author  : Albert Owusu - Asare
+Email   : < owusuasa@grinnell.edu >
+Version : 1.0 
+
+This document serves to introduce fragments to interested parties.
+
+The documents will be useful to you if :
+
+i) You are familiar to the android environment and have a basic
+   workng knowledge of android 
+ii) You are familiar with 'Activities'
+ii) You have some working knowlege of Java
+
+
+Please email any criticisms or suggestions to :
+
+< owusuasa@grinnell.edu >
+
+
+*******************************************************************/
