@@ -9,6 +9,9 @@ The repository so far has some work on:
 
 1. Exploring semaphores in C
 2. Exploring fragments in Android.
+   -> Tutorial.txt is an interesting one. I need your feedback.. :)
+
+3.
 
 
 
