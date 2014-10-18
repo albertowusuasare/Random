@@ -21,3 +21,74 @@ Please email any criticisms or suggestions to :
 
 
 *******************************************************************/
+
+------------------------------
+Contents:                    
+------------------------------
+
+* Introduction
+* What the heck are fragements?
+* How do I use a fragment in my app?
+* Summary
+* Citations
+
+
+-------------------------------
+Introduction:
+-------------------------------
+
+	Fragments are utilities that provide programmers(you) a means of having  dynamic layouts during the execution 
+of our mobile application. With fragments we are able to display layouts that can perform a variety of 
+functions like getting user input, displaying cool animations and so forth.The discussion of fragments is especially 
+interesting because it normally introduces a follow up question of "so how are these things you are calling fragments 
+any different from activities"? 
+       The following text attempts to explain more carefully the motivations for having a fragments while 
+discussing the various similarities and differences between fragments and activities. Hence by the end of the
+text you should have a fair idea of how the answer to, "so how are these things you are calling fragments 
+any different from activities"? and you should be able to identify situations where fragments are needed. 
+I also hope that you will be able to implement fragments or at least be motivated to go out and read more about them.
+
+
+
+-------------------------------
+What the heck are fragments?
+-------------------------------
+
+According to http://developer.android.com/guide/components/fragments.html:
+
+"A Fragment represents a behavior or a portion of user interface in an Activity."
+
+
+   I find the statement above to be very critical to our understanfing of framents because it provides a clear 
+definition of what fragments are not, which is that : fragments are not Activities; fragments are found in 
+activities and may represent some specific behavior in an Activity. This of course implies that in talking about 
+fragments we are inherently talking about activities too. 
+
+Can you see the distinction? ...
+
+Thus a fragment is simply some way of defining how the entire user interface or even parts of the user interface of 
+an activity should look at any particular point in time.
+
+When you think of fragments just think of "LOOK", "LAYOUT", "PORTION" (I couldn't find a nicer 'L' word so "PORTION" 
+works too?). It is basically a look/layout we give dynamically to a portion of an activity user interface  throughout 
+different stages of the execution of our application.
+
+Hmm I kinda see it but ... (Ok I will interrupt your thought here!)
+
+(I should be nice! Ok go on..)
+
+... What do I say if my 80 year old grandmother asks me about fragments?
+
+I would say a fragment is like the skin coloration observed in  chameleons.Though the we may have same chameleon, Archaius tigris, 
+we realise that at different points in its day to day life, Archaius tigris  can take on a new look. 
+This new look is interesting because it also sheds some light on the kind of reaction that caused the new look in the first place.
+
+I know your grandmother is smart but hmm I dont know about mine... I would go ahead and say, " so granny,
+the chamaleon here is the activity, the different skin colorations are the different fragments associated with 
+the activity and the stimulus( the thing that caused the reaction) are the things that we as programmers set in place
+in our programs to produce the expected behaviors of producing fragments in an activity."
+
+
+----------------------------------
+How do I use a fragment in my app?
+----------------------------------
