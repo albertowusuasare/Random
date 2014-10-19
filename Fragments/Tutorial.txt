@@ -77,13 +77,13 @@ Hmm I kinda see it but ... (Ok I will interrupt your thought here!)
 
 (I should be nice! Ok go on..)
 
-... What do I say if my 80 year old grandmother asks me about fragments?
+... What do I say if my 80 year old grandfather asks me about fragments?
 
 I would say a fragment is like the skin coloration observed in  chameleons.Though the we may have same chameleon, Archaius tigris, 
 we realise that at different points in its day to day life, Archaius tigris  can take on a new look. 
 This new look is interesting because it also sheds some light on the kind of reaction that caused the new look in the first place.
 
-I know your grandmother is smart but hmm I dont know about mine... I would go ahead and say, " so granny,
+I know your grandfather is smart but hmm I dont know about mine... I would go ahead and say, " so granny,
 the chamaleon here is the activity, the different skin colorations are the different fragments associated with 
 the activity and the stimulus( the thing that caused the reaction) are the things that we as programmers set in place
 in our programs to produce the expected behaviors of producing fragments in an activity."
@@ -92,3 +92,30 @@ in our programs to produce the expected behaviors of producing fragments in an a
 ----------------------------------
 How do I use a fragment in my app?
 ----------------------------------
+
+First I think it will be handy to understand the fragment life cycle.
+
+Life what..?
+
+Ok check out the page below:
+
+http://developer.android.com/guide/components/fragments.html
+Scroll down that page; it is the chart imgage to the right. (Study it, know it, love it.) 
+
+To start create a new Android Application project and select a blank activity.
+
+1. In the src folder, create a new class, here we call it SampleFragment
+2. After the class is created make sure that the class extends Fragments
+   -> you may have to import fragments. If you want to ensure backwards compactibility with older android devices then you will have
+      to select android.support.v4.Fragment if your target devices are running API 11 and above go ahead and use: android.app.Fragment
+
+
+3. Now we are going to create the UI for our fragment
+   create a new  Android XML file in your res/layout folder.
+   Here you can design the layouts in any way you want.
+
+
+4. Now we have to add the fragments to the coresponding activty
+
+
+

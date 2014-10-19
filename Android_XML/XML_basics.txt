@@ -1,0 +1,8 @@
+This document will be a quick reference for Android Xml attributes
+To be updated soon
+
+List of topics 
+
+
+*android : gravity 
+
