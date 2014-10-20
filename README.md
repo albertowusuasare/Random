@@ -11,9 +11,7 @@ The repository so far has some work on:
 2. Exploring fragments in Android.
    -> Tutorial.txt is an interesting one. I need your feedback.. :)
 
-3.
+3. Android Xml tutorials
 
 
 
-
---> More ideas to come later :)
