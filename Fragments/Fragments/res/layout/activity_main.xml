@@ -32,10 +32,18 @@
  
     <!-- Fragment One only -->
    	<fragment
-        android:id=""
-        android:name="com.example.board.FragmentOne"
+        android:id="@+id/fragment_one"
+        android:name="com.example.fragments.FragmentOne"
         android:layout_height="match_parent"
         android:layout_width="0dp"
         android:layout_weight="1" />
+  <!-- Fragment Two -->
+   <fragment
+        android:id="@+id/fragment_two"
+        android:name="com.example.board.FragmentTwo"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="3" />
  
+
 </LinearLayout>

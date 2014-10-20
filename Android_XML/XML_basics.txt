@@ -6,3 +6,22 @@ List of topics
 
 *android : gravity 
 
+*android :weight 
+
+
+--------------------------
+* android:layout_width 
+--------------------------
+
+This defines the width of a particular layout.
+
+Options:
+
+i) fill_parent: This says that the width of the view will depend on the width of the contents of the layout. 
+
+ii) match_parent: 
+
+iii) wrap_content: This says that the width  of the view will depend on the width of the contents of the layout.
+
+
+
