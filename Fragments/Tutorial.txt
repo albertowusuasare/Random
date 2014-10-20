@@ -223,6 +223,57 @@ Step 3 : Add the fragments to the desired activity.
 
 In my sample, I will create a dual pane activity so I will add both of our fragments to main_activity.xml
 
+My main_activity.xml looks like below.
+
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:baselineAligned="false"
+    android:background="@color/light_grey" >
+ 
+    <!-- Fragment One only -->
+   	<fragment
+        android:id="@+id/fragment_one"
+        android:name="com.example.fragments.FragmentOne"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+  <!-- Fragment Two -->
+   <fragment
+        android:id="@+id/fragment_two"
+        android:name="com.example.fragments.FragmentTwo"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="3" />
+ 
+
+</LinearLayout>
+
+
+Voila! you just implemented fragments in Android.
+
+
+-------------------------------
+Summary
+-------------------------------
+
+Fragments are a good way to have more flexible UI.  
+Fragments have their own lifecylce just like Activities have lifecycles
+Fragments can be added or removed as activities are executed.
+We can have several fragments in a single Activity.
+
+To implement a fragment:
+
+=> Create Android xml files for each of the fragments you need, where you will define the particular layouts of each fragment
+=> Create java classes for each of the fragments you need.Implement 'onCreateView' in each of the java files
+=> Add fragments to the desired activity and provide a reference to the respective fragment class you already created here :
+   eg.  android:name="com.example.fragments.FragmentTwo"
 
 
 
@@ -236,3 +287,6 @@ Views and inflater:
 http://stackoverflow.com/questions/3477422/what-does-layout-inflater-in-android-do
 https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CocoaViewsGuide/WorkingWithAViewHierarchy/WorkingWithAViewHierarchy.html
 http://developer.android.com/reference/android/view/ViewGroup.html
+
+General:
+https://www.youtube.com/watch?v=6GyGtCMoR_U
