@@ -72,7 +72,7 @@
           <tags>persp.showIn:org.eclipse.team.ui.GenericHistoryView</tags>
           <tags>persp.showIn:org.eclipse.ui.views.ResourceNavigator</tags>
           <tags>persp.showIn:org.eclipse.ui.navigator.ProjectExplorer</tags>
-          <children xsi:type="basic:PartSashContainer" xmi:id="_OhWXMVbPEeSn6PH3LpSlYw" selectedElement="_OhWXO1bPEeSn6PH3LpSlYw" horizontal="true">
+          <children xsi:type="basic:PartSashContainer" xmi:id="_OhWXMVbPEeSn6PH3LpSlYw" selectedElement="_OhWXMlbPEeSn6PH3LpSlYw" horizontal="true">
             <children xsi:type="basic:PartSashContainer" xmi:id="_OhWXMlbPEeSn6PH3LpSlYw" containerData="2500" selectedElement="_OhWXM1bPEeSn6PH3LpSlYw">
               <children xsi:type="basic:PartStack" xmi:id="_OhWXM1bPEeSn6PH3LpSlYw" elementId="left" containerData="6000" selectedElement="_OhWXNFbPEeSn6PH3LpSlYw">
                 <tags>newtablook</tags>
@@ -242,7 +242,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_OYOQYFbPEeSn6PH3LpSlYw" elementId="org.eclipse.ui.workbench.file">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_OYWzQFbPEeSn6PH3LpSlYw" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_NpKK_VbPEeSn6PH3LpSlYw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sLAX8FklEeS7au7fKUBsjg" elementId="print" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/print_edit.png" tooltip="Print" enabled="false" command="_NpKK_VbPEeSn6PH3LpSlYw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_OYOQYVbPEeSn6PH3LpSlYw" elementId="additions" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -272,7 +272,7 @@
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_OYPegFbPEeSn6PH3LpSlYw" elementId="org.eclipse.ui.workbench.navigate">
         <tags>Draggable</tags>
-        <children xsi:type="menu:HandledToolItem" xmi:id="_OYdg8lbPEeSn6PH3LpSlYw" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_No1a3FbPEeSn6PH3LpSlYw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_sLJh4lklEeS7au7fKUBsjg" elementId="org.eclipse.ui.window.pinEditor" visible="false" iconURI="platform:/plugin/org.eclipse.ui/icons/full/etool16/pin_editor.png" tooltip="Pin Editor" type="Check" command="_No1a3FbPEeSn6PH3LpSlYw"/>
       </children>
       <children xsi:type="menu:ToolBar" xmi:id="_OYQFkFbPEeSn6PH3LpSlYw" elementId="group.editor" toBeRendered="false">
         <tags>toolbarSeparator</tags>
@@ -775,7 +775,8 @@
       <tags>platform:cocoa</tags>
       <parameters xmi:id="_NsB4w1bPEeSn6PH3LpSlYw" elementId="org.eclipse.ui.views.showView.viewId" name="org.eclipse.ui.views.showView.viewId" value="org.eclipse.jdt.ui.PackageExplorer"/>
     </bindings>
-    <bindings xmi:id="_NsjdM1bPEeSn6PH3LpSlYw" keySequence="COMMAND+CTRL+F" command="_NsjdMVbPEeSn6PH3LpSlYw"/>
+    <bindings xmi:id="_rmumMFklEeS7au7fKUBsjg" keySequence="COMMAND+6" command="_rlcz0FklEeS7au7fKUBsjg"/>
+    <bindings xmi:id="_rngCQFklEeS7au7fKUBsjg" keySequence="COMMAND+CTRL+F" command="_NsjdMVbPEeSn6PH3LpSlYw"/>
   </bindingTables>
   <bindingTables xmi:id="_NqzJslbPEeSn6PH3LpSlYw" elementId="org.eclipse.jdt.ui.javaEditorScope" bindingContext="_NpT7_1bPEeSn6PH3LpSlYw">
     <bindings xmi:id="_NqzJs1bPEeSn6PH3LpSlYw" keySequence="COMMAND+SHIFT+C" command="_NosQ9lbPEeSn6PH3LpSlYw"/>
@@ -928,7 +929,7 @@
     <bindings xmi:id="_Nr7LE1bPEeSn6PH3LpSlYw" keySequence="HOME" command="_No1a4VbPEeSn6PH3LpSlYw"/>
   </bindingTables>
   <bindingTables xmi:id="_NskrUVbPEeSn6PH3LpSlYw" contributorURI="platform:/fragment/org.eclipse.e4.ui.workbench.renderers.swt.cocoa" bindingContext="_Nnog9VbPEeSn6PH3LpSlYw">
-    <bindings xmi:id="_NskrUlbPEeSn6PH3LpSlYw" keySequence="M1+W" command="_NskEQlbPEeSn6PH3LpSlYw"/>
+    <bindings xmi:id="_rnhQYFklEeS7au7fKUBsjg" keySequence="M1+W" command="_NskEQlbPEeSn6PH3LpSlYw"/>
   </bindingTables>
   <bindingTables xmi:id="_Og4dIVbPEeSn6PH3LpSlYw" bindingContext="_Og4dIFbPEeSn6PH3LpSlYw"/>
   <bindingTables xmi:id="_Og4dI1bPEeSn6PH3LpSlYw" bindingContext="_Og4dIlbPEeSn6PH3LpSlYw"/>
@@ -2404,6 +2405,7 @@
   <commands xmi:id="_OUwss1bPEeSn6PH3LpSlYw" elementId="AUTOGEN:::org.eclipse.cdt.dsf.debug.ui.viewmodel.debugview.update.Refresh/org.eclipse.cdt.dsf.debug.ui.debugview.viewmodel.update.actions.refresh" commandName="Refresh" category="_Non_cVbPEeSn6PH3LpSlYw"/>
   <commands xmi:id="_OUxTwFbPEeSn6PH3LpSlYw" elementId="AUTOGEN:::org.eclipse.cdt.debug.ui.disassembly.toolbar/org.eclipse.pinclone.disassembly.pinDebugContext" commandName="Pin to Debug Context" category="_Non_cVbPEeSn6PH3LpSlYw"/>
   <commands xmi:id="_OUxTwVbPEeSn6PH3LpSlYw" elementId="AUTOGEN:::org.eclipse.cdt.debug.ui.disassembly.toolbar/org.eclipse.pinclone.disassembly.clone" commandName="Open New View" category="_Non_cVbPEeSn6PH3LpSlYw"/>
+  <commands xmi:id="_rlcz0FklEeS7au7fKUBsjg" elementId="com.genymobile.genymotion.commands.genyMotionCommand" commandName="GenyMotion Command" category="_rlblsVklEeS7au7fKUBsjg"/>
   <addons xmi:id="_Nnog9lbPEeSn6PH3LpSlYw" elementId="org.eclipse.e4.core.commands.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
   <addons xmi:id="_Nnog91bPEeSn6PH3LpSlYw" elementId="org.eclipse.e4.ui.contexts.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
   <addons xmi:id="_Nnog-FbPEeSn6PH3LpSlYw" elementId="org.eclipse.e4.ui.bindings.service" contributorURI="platform:/plugin/org.eclipse.platform" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
@@ -2449,4 +2451,5 @@
   <categories xmi:id="_Non_cFbPEeSn6PH3LpSlYw" elementId="org.eclipse.cdt.debug.ui.category.reverseDebugging" name="Reverse Debugging Commands" description="Set of commands for Reverse Debugging"/>
   <categories xmi:id="_Non_cVbPEeSn6PH3LpSlYw" elementId="org.eclipse.core.commands.categories.autogenerated" name="Uncategorized" description="Commands that were either auto-generated or have no category"/>
   <categories xmi:id="_Non_clbPEeSn6PH3LpSlYw" elementId="org.eclipse.cdt.debug.ui.category.tracing" name="Tracing Commands" description="Category for Tracing Commands"/>
+  <categories xmi:id="_rlblsVklEeS7au7fKUBsjg" elementId="com.genymobile.genymotion.commands.category" name="GenyMotion Category"/>
 </application:Application>

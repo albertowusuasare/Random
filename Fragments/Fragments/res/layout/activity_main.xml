@@ -40,7 +40,7 @@
   <!-- Fragment Two -->
    <fragment
         android:id="@+id/fragment_two"
-        android:name="com.example.board.FragmentTwo"
+        android:name="com.example.fragments.FragmentTwo"
         android:layout_height="match_parent"
         android:layout_width="0dp"
         android:layout_weight="3" />

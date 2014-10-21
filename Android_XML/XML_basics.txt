@@ -21,7 +21,7 @@ i) fill_parent: This says that the width of the view will depend on the width of
 
 ii) match_parent: 
 
-iii) wrap_content: This says that the width  of the view will depend on the width of the contents of the layout.
+iii) wrap_content: This says that the width of the view will depend on the width of the contents of the view
 
 
 
