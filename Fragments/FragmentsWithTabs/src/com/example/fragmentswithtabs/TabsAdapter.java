@@ -27,7 +27,7 @@ public class TabsAdapter extends FragmentPagerAdapter{
 			return new SocialMedia();
 		case 2:
 			// Movies fragment activity
-			return new Articles();
+			return  new Articles();
 		}
 
 		return null;

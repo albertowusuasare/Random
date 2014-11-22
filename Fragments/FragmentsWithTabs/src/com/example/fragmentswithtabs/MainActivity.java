@@ -20,7 +20,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	private TabsAdapter mAdapter;
 	private ActionBar actionBar;
 	// Tab titles
-	private String[] tabs = { "Articles", "Social Media", "RSS" };
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -35,7 +35,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 				actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);		
 
 				// Adding Tabs
-				for (String tab_name : tabs) {
+				for (String tab_name : Utilities.tabs) {
 					actionBar.addTab(actionBar.newTab().setText(tab_name)
 							.setTabListener(this));
 				}
@@ -83,8 +83,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 
 	@Override
 	public void onTabSelected(Tab tab, FragmentTransaction ft) {
-		// TODO Auto-generated method stub
 		
+		viewPager.setCurrentItem(tab.getPosition());
 	}
 
 	@Override
