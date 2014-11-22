@@ -3,12 +3,10 @@ package com.example.fragmentswithtabs;
 
 import android.app.ActionBar;
 import android.app.ActionBar.Tab;
-import android.app.Fragment;
-import android.app.FragmentManager;
+
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,7 +23,8 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		// Initilization
+		
+		// Initilization and setting
 				viewPager = (ViewPager) findViewById(R.id.pager);
 				actionBar = getActionBar();
 				mAdapter = new TabsAdapter(getSupportFragmentManager());
@@ -34,15 +33,17 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
 				actionBar.setHomeButtonEnabled(false);
 				actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);		
 
-				// Adding Tabs
+				// Add Tabs with respective Names
 				for (String tab_name : Utilities.tabs) {
 					actionBar.addTab(actionBar.newTab().setText(tab_name)
 							.setTabListener(this));
 				}
+				
 
 				/**
-				 * on swiping the viewpager make respective tab selected
+				 * on swiping the <code>viewPager</code>  creates respective tab selected
 				 * */
+				
 				viewPager.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
 
 					@Override

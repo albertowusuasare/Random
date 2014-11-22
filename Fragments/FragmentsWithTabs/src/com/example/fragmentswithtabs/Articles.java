@@ -1,20 +1,17 @@
 package com.example.fragmentswithtabs;
 
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.ListFragment;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
 
 public class Articles extends ListFragment {
-	  boolean mDualPane;
+	  boolean mDualPane = true;
       int mCurCheckPosition = 0;
 	@Override
     public void onActivityCreated(Bundle savedInstanceState) {
@@ -24,15 +21,12 @@ public class Articles extends ListFragment {
         // with a fragment.
         // The activity is a context (since Activity extends Context) .
 
-       /* Toast.makeText(getActivity(), "TitlesFragment:onActivityCreated",
-                Toast.LENGTH_LONG).show();
-                */
 
         // Populate list with our static array of titles in list in the
         // Utilities class
         setListAdapter(new ArrayAdapter<String>(getActivity(),
                 android.R.layout.simple_list_item_activated_1,
-                Utilities.tabs));
+                Utilities.articles));
 
         // Check to see if we have a frame in which to embed the details
         // fragment directly in the containing UI.
@@ -40,18 +34,18 @@ public class Articles extends ListFragment {
         // This is first created when the phone is switched to landscape
         // mode
 
-        View detailsFrame = getActivity().findViewById(R.id.details);
+       // View detailsFrame = findViewById(R.id.pager);
 
-        Toast.makeText(getActivity(), "detailsFrame " + detailsFrame,
-                Toast.LENGTH_LONG).show();
+       // Toast.makeText(getActivity(), "detailsFrame " + detailsFrame,
+         //       Toast.LENGTH_LONG).show();
 
         // Check that a view exists and is visible
         // A view is visible (0) on the screen; the default value.
         // It can also be invisible and hidden, as if the view had not been
         // added.
         //
-        mDualPane = detailsFrame != null
-                && detailsFrame.getVisibility() == View.VISIBLE;
+      //  mDualPane = detailsFrame != null
+           //     && detailsFrame.getVisibility() == View.VISIBLE;
 
         Toast.makeText(getActivity(), "mDualPane " + mDualPane,
                 Toast.LENGTH_LONG).show();
@@ -61,20 +55,24 @@ public class Articles extends ListFragment {
             mCurCheckPosition = savedInstanceState.getInt("curChoice", 0);
         }
 
-        if (mDualPane) {
+       if (mDualPane) {
             // In dual-pane mode, the list view highlights the selected
             // item.
             getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
             // Make sure our UI is in the correct state.
-            showDetails(mCurCheckPosition);
-        } else {
+           // showDetails(mCurCheckPosition);
+            
+       }
+       /*  else { 
+       
             // We also highlight in uni-pane just for fun
             getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
             getListView().setItemChecked(mCurCheckPosition, true);
-        }
+        //}
+          */
 	}
 
-	@Override
+	/*@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
 
@@ -83,6 +81,7 @@ public class Articles extends ListFragment {
 		return rootView;
 	} // onCreateView
 	
+	*/
     void showDetails(int index) {
         mCurCheckPosition = index;
 

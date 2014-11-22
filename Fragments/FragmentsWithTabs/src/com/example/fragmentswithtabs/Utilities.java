@@ -1,8 +1,9 @@
 package com.example.fragmentswithtabs;
 
 public class Utilities {
-	public  static final String[] tabs = { "Grinnel Events", "Social Media", "RSS" };
-	
+	public  static final String[] tabs = { "Articles", "Social Media", "RSS" };
+	public  static final String[] articles = { "Grinnell Events", "GrinWell", 
+		"GrinnWell beta","Test GrinWell","Ready for #NSO","Majid Moujaled","FaceTag" };
 	
 	public static final String[] DIALOGUE = 
 	    {
