@@ -1,0 +1,87 @@
+/*******************************************************
+Author: Albert Owusu-Asare
+Date Created : Fri Nov 21 17:45:11 CST 2014
+
+
+
+This document explains the thought process 
+when as I am designing the structures in this project
+
+
+References made to SamR should be mapped to 
+Samuel Rebelsky, Grinnell College:
+http://www.math.grin.edu/~rebelsky/
+*******************************************************/
+
+===================
+1. AlbyStack
+===================
+
+This is my custom stack.
+My goals are:
+i) Gain some practice with making linear Structures
+ii) Make useful design decisions that will make my
+structure better suited for the work I do
+
+
+Philosophy:
+
+AlbyStack is a linear data Structure that will hold 
+a collection of values where by the order in which we
+get values from the structure follows FILO (first in last out).
+
+Use Cases:
+
+i) AlbyStack can help us write non recursive programs or convert
+recursive programs to non recursive ones. It is my aim to 
+use AlbyStack to help people better understand how  recursive
+functions work
+
+ii) I will just like to have the joy of using my own Stack
+for my other work like Android.
+
+
+Methods:
+we might want to have the classic Stack methods
+i) push 
+ii) pop
+iii) peek
+iv) search 
+v) empty
+
+my additions
+
+vi) stackCount  //counts the amount of elements so far on the stack
+vii) Clear // pops everything from the stack
+
+
+IMPLEMENTATION OF STRUCTURE
+-------------------------------
+
+I used SamR's approach to designing data structures which is LIA.
+
+Layout(L) : 
+
+I shall think of how the structure is laid out in memory and analyze
+all the various approaches there could be.
+
+In our particular case, we might result to, like we normally do,
+arrays or linked structures.
+
+Arrays : array indexing is nice however in our case, we dont necessarily
+want to take advantage of fast indexing.
+
+Typically arrays grow from left to right so we can keep adding things from
+the bottom of the list and also popping things out from the bottom.
+
+One way or the other we are going to need to keep track of where in the
+array we are with some other separate pointer/variable.
+
+I will stick to a linked structure here, because I like the fact that 
+the structure will be dynamic and so we wont have to care about the 
+structure being full.( At least not until we've used up all the memory
+in our system)
+
+
+
+
