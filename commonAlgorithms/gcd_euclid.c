@@ -14,5 +14,6 @@ int main(){
   int b = 100;
   int result = gcd(a,b);
   printf("%d\n",result);
+  printf("%d\n",sizeof(int));
   return 0;
 }
