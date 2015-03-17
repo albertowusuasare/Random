@@ -1,0 +1,7 @@
+/*
+ * Author : Albert Owusu-Asare
+ * Date   : Tue Mar 17 15:03:23 CDT 2015
+ * 
+ * Contains notes about the common design patterns
+ *
+ */
