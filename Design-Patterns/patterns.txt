@@ -1,6 +1,6 @@
 /*
  * Author : Albert Owusu-Asare
- * Date   : Tue Mar 17 15:03:23 CDT 2015
+ * Date   : Wed Mar 18 19:50:15 CDT 2015
  * 
  * Contains notes about the common design patterns
  *
@@ -44,3 +44,70 @@ To use such a model we might need to set up the following:
 
 
 Note that java has its own version of Observable and Observer that you may use in your design.
+
+
+
+/*********************
+
+ Decorator Pattern 
+
+***********************/
+
+-> What is it?
+-> Why should I care?
+-> What constitutes the building blocks of this pattern? Interfaces, classes etc
+
+
+
+Motivation : Suppose we have a super class say Footballer where we have a decription of the footballer and a quantification of his talent based on all the
+availble talents in football.
+
+If we wanted to represent as many footballers as possible, we would have
+to subclass each time we have a new footballer. There is an enormous amount
+of footballers we can have so we might be overflowed with subclasses.
+One for Ronaldo,Rooney,Rodriguez etc. We need a better approach.
+
+One approach might be having all the talents that footballers can hae in 
+the footballers class and have a general view of what the quantification
+of the talent is based on wheter some property exist or not.
+
+Thus canStepOver(), canShoot(), canDribble() canSlide() etc.
+This reduces the pool of subclasses one could have.
+
+When you think of decorator, think about wrapping around of an object.
+
+The decorator pattern attaches additional responsibilities to an object dynamically. 
+
+
+Basically we have a decorator interface that will extend some base (super) interface.
+
+This decorator will have an object of the super Type wrapped inside it.
+As a result we can have varying amounts of behavoirs and properties.
+
+We can basically take some object and "wrap" or decorate it with another.
+NOw the for instance the cost method in the decorator class is simple the 
+cost of that particular decorator plus the cost of the particular object 
+that the decorator wraps.
+
+
+Abstract classes are good here because you can extend a super abstract class 
+to get your decorator class and then you can choose which methods are going to
+stay the same and which ones need to be redefined. I also think we use 
+abstract classes because we cannot have dynamic fields in an interface.
+
+
+Decorator pattern is useful for the various I/O operations in the Java I/O.
+
+Taking points 
+
+->inheritance is not the best way to achieve flexibility
+
+->Good code is one where behavoir is extended without the need to modifu existing
+code.
+
+-> The decorator pattern can be an alternative to doing a lot of sub classing
+->Decortotrs change the behaviors of their components by addiong new 
+ functionallity
+
+-> It is possible to wrap a component with any number of decorators
+
