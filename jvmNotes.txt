@@ -1,0 +1,21 @@
+/*
+ * Author : Albert Owusu-Asare
+ * Date   : Sun Mar 22 20:49:12 CDT 2015
+ * Purpose : To learn a bit about the Java JVM and help others to understand it
+ *         too
+ */
+
+/* Contents */
+
+1. What is Java?
+ ->  How is it different from other programming languages
+ ->  What motivated the creation of Java.
+ ->  Who made Java
+
+2. What is JVM?
+ -> Life before JVM and what the problem was.
+ -> Definition of JVM
+ -> Something little about the JVM implementation.
+ -> What does it mean to be platform independence.
+
+3. Summary of major ideas.
