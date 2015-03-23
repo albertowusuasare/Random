@@ -19,3 +19,82 @@
  -> What does it mean to be platform independence.
 
 3. Summary of major ideas.
+
+
+
+1. What is Java?
+=====================
+
+Emerging infrastructure and the creation of new devices and technologies and
+the interconnection of these networks demandd a new environments for software.
+
+We had all sorts of devices with microprocessors in them. Some of these were 
+the growing personal computers, and devices with specific functionalities 
+Television, VCR's and audio components, fax etc.
+
+Each of these new environment possed new challenges for software developers.
+
+Java was desinged to meet the needs of such growing networks. Platform
+indepenedent architectures were even more and more needed.
+
+The major demand for something like Java therefore was as a result of  
+the growth of networks. We at that time had these huge networks of all sorts 
+of devices with different architectures, operating systems and unlike programs 
+that were made to compile for specific hardware and operating systems.
+Platform indepenedent programs were needed because they would reduce the 
+ cost of development and maintainance.
+
+
+Another advantage for Java was its security over networks. Every program that 
+that is downloaded on a network will be scrutinized and checked for security
+unlike other programs.
+
+Also bugs like memeory corruptions will never occur in Java because the proper
+security measures were put in place.
+
+Also java provides us a better way to software distibution. We can literally now
+distributed as byte code across networks which is earier and chepater than 
+programs that 
+
+
+
+Java was created by James Arthur Gosling
+
+
+2. What is JVM
+===================
+
+When we do anything in Java, we are tapping into one of the following:
+1. The core programming language 
+2. The class file format
+3. The JVM 
+4. The Java API
+
+Prior to Java languages like C or C++ we mostly comiled and linked code into a single binary execuable file that is specific to a specific platform  into a
+binary executable file specific to  a partiular hardware platform and
+operating system. This was difficult because we had to trasnfer the actuall 
+source files from one computer to the other and it was a difficult scheme
+now that networks were growing.
+
+We basically writes some stuff into an editor, compile what we wrote into a 
+class file and then run the class file on the JVM to actually run the 
+program.
+
+
+A JVM is an abstract machine that interpretes bytescode and exectues a java 
+program. Its main job is to load class files and execute the bytecode 
+contained in those files.
+
+
+
+Basically the idea is:
+
+i) Write java program.
+ii) Compile the program turning in into bytecode/ .class files (javac)
+iii) Send all the class files to the JVM machine.
+iv) The machine adds in the class files for the various Java API's
+v) Turn all the bytecodes to machine specific code and then execute the program
+
+Sources:
+========
+http://mihaimoldovan.com/download/Inside-Java-Virtual-Machine.pdf
