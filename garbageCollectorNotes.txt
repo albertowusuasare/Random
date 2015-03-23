@@ -10,3 +10,107 @@ Contents
 
 1. What is the Garbage Collector?
 2. How might we implemet the Garbage Collector?
+3. What is the finalize keyword?
+
+
+The Garbage collector is a means of freeing unused portions of the heap.
+(Thus, the garbage objects)
+It frees memory that has no references to it.
+
+Some Advantages:
+
+Relieves programmer from dealing with freeing unused memory. Every C programmer
+knows how much of a pain this is.
+ii) Ensures securtiy as Java programmers wheter maliciously or not cannot crash
+the JVM by incorrectly freeing memory
+
+Some potential Disadvantages:
+Adds extra overhead to the program. Time used to run the  gc. No real choice as
+to how scheduling is done on the CPU.
+
+
+
+2. How might we implement the Garbage Collector?
+  Any Garbage collector algorithm needs to do two things.
+
+  1. Locate garbage objects 
+  2. Free the memory over there.
+
+
+-> We must have a starting point ( some rooot). An object is referenced/live, 
+if there is some path from the root to the object and deereferenced if 
+otherwise.
+
+-> I get the sense that there could be multiple of such roots and there is a set
+of such roots to start with: from object references that are local variables, 
+object references in the class variables, object references from teh constant 
+pool of loading classes. (class name. superclass name, superinterface name,
+field names method names.
+
+
+The real deal is how to distinguish between a live object and a garbage object.
+There are two ways: 
+i) Referencing : here we keep a count of the number of references to an object
+   when that number goes 0,we know it is time to dereference that memory. Other 
+   than that, we know it is ok
+ii) Tracing : Here, we go through specific root Nodes and then trace through 
+    those roots to every object. When we are done, we know which traces we
+    never got to and then we dereference those portiion of memeory
+
+
+
+i) Referencing
+
+Idea:  Object is created you keep a count on all other variables that references
+this object. When those variables are gone you decrement the count. When count
+is 0 you take it out of memory.
+
+Advantage : Run the reference counting small chunks of time and you can 
+	    interweave the counting with the execution of the program
+
+Disadvantge.  Cannot detect cylcles.
+
+
+
+ii) Tracing
+
+Idea: Trace out the entire collection of references by starting at some root.
+      As tracing is done, any object that we meet along the way is marked. 
+      Someway somehow eg using bit maps. The second stage is to clear out 
+      all the used part of memeory that was not mapped.
+
+"Much general algorithm "Mark and sweep".
+
+
+void mark( Object p)
+
+if( !p.marked)
+  p.marked = "true"
+
+  for each Object q referenced by p
+    mark(q)
+
+
+
+void sweep()
+
+for each Object p in the heap
+  if (p.marked)
+    p.marked = flase
+  else
+    heap.release(p)
+
+
+
+3. What is the finalize() method.
+
+The finalize() method in Java is called when the garbage collector is just about
+to get rid of a not live object. The finalize method is provided just 
+so other resources are explicitly taken care of before the object is dereferenced.
+It is slow because after the finalize method is called the marking stage has 
+to be done again to make soure a previously unreferenced object was not made
+live by the methods actions.
+
+
+Programmers are not adviced to rely on the finalize method for cleaning up
+
