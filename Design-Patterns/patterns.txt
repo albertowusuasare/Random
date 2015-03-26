@@ -1,10 +1,43 @@
 /*
  * Author : Albert Owusu-Asare
  * Date   : Wed Mar 18 19:50:15 CDT 2015
+ * Last Updated : Wed Mar 25 18:28:29 CDT 2015
  * 
- * Contains notes about the common design patterns
+ * Contains notes about the common design patterns: May contain 
+ * typos. Please let me know owusuasa@grinnell.edu
  *
  */
+
+/****************************
+
+ What is a bad Design?
+
+******************************/
+
+When desinging software it is important to not only make sure that you
+fulfil the requirements of the software but also that you are able to 
+keep your future self in mind or future developers in mind.
+
+The definition for a "bad design" is a little hard to come by. This 
+is because in any design one could make a peer would be able to respond
+"Hmm I would have done it this other way". 
+
+However we know certain characteristics of what a bad design is:
+1. A change in one part of the system causes a significant change in most 
+   parts of the system.
+2. When unexpected things happen the entire system collapses
+3. It is difficult to re-use the appliation because it is difficult to 
+   disentangle the different parts of the application.
+
+We do not want bad design at least I don't so we might learn some more general
+principles that can guide us to making good design decisions. Such principles
+are "desgin patters".
+
+ Design patters are observations several professional
+programmers have made as to how specific family of reoccuring problems might be tackled.
+
+It is not your sure way of becoming a good designer but an understanding of
+some of these patters may very well lead you to be one.
 
 
 /*********************
@@ -120,3 +153,74 @@ code.
 What is it?
 Why should I care?
 How is it implemented?
+
+
+souce : https://www.cs.cmu.edu/afs/cs.cmu.edu/Web/People/NatProg/papers/Ellis2007FactoryUsability.pdf
+
+Why should I care?
+==================
+(i) The factory method provides a means of ensuring the same type of an object
+is created at every instance the factory is called.( consistent products)
+
+(ii) We want the client to be as much abstract as possible. The client
+    cares about the whats more than the how. The dependency inversion 
+    principle must be obeyed : thus low level modules should not depend on high
+   level modules.Both should depend on abstractions.
+
+We realize that in our discussion of Design Patterns so far, we have been using the "new"
+keyword to instatiate objects. This goes against the principle of dependency inversion
+because we have not seperated fully the what from the how.
+
+for instance whenver we use 
+
+Widget  button = new Button ;
+
+Even though widget may be an interface, "the new Buttton" part is not abstract. Our hopes
+is to try to deal with this problem using the factory pattern.
+
+For reasons of Change and future maintanance, it is often a good idea to make sure to 
+abstract way from using the new operator.
+
+Factories are used for object creation.
+
+
+We can do this by normally having a variable for the factory inside the class we are
+interested in and produce objects from this factory. (looks kinna similar to delegation)
+
+We  handle object creation and encapsulate it in a subclass. We therefore basically have
+two group of classes.
+
+i) The creator classses : Our concrete object that is trying to produce a certain product
+will itself be a subclass of some other abstract class.
+
+ii) Product classes : Our concrete products will be subclasses of some abstract base class
+
+
+By definition : One may say that the factory method pattern is simply defining an 
+interface( or abstract class) that can create some type of objects but allows 
+sub classes to decide which specific objects to create.
+
+
+Recall that there is a variant called simple factory  where there is no extention made
+of a subclass of some factory. We essentially have one base class and compose another object(
+the factory we want) in this base class.
+
+In the factory method, you are letting sub classes decide what it is you want to create
+
+
+A great big picture advice is to always depend on abstractions not concrete classes.
+
+
+The following principles can help you follow the dependency inversion principle:
+i) No concrete class should extend another concrete class
+ii) No variable should hold a reference to a concrete class.
+iii) No method should override an implemented method of any of its base classes
+
+continue on page 144 
+/********************
+ 
+ Sources: 
+ 
+*********************/
+
+http://www.objectmentor.com/resources/articles/dip.pdf
