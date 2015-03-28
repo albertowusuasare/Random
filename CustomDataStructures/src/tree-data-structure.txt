@@ -29,6 +29,7 @@ Contents
    Thus the algoriths(instructions) that we desing later will be very dependent
    on the way that the data itself is organised in the first place.
    
+
    Data structures are relevant because they provide an abstraction to which
    we see how our data is ogranised in memory. Thus we do not think about
    the 0s and 1s down in memory but we think an a higher level about how
@@ -100,3 +101,4 @@ tree.
 
 Check out : http://www.math.ucla.edu/~wittman/10b.1.10w/Lectures/Lec18.pdf
 For a simple exercise on traversals
+
