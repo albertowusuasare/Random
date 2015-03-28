@@ -1,0 +1,103 @@
+/*
+ * Author : Albert Owusu-Asare
+ *
+ * Purpose: To explain what the tree data structure is to people new to 
+ *          the data structure
+ */
+
+
+
+Contents
+==========
+1. What is a data structure? -definition and why they are relevant
+2. What is a tree data structure? - definition 
+3. Why are trees relevant?
+4. Types of trees
+5. Common Questions about Trees
+
+
+
+1. What is a data structure? -definition and why they are relevant
+
+-> Data structures are ways to organize data.
+-> Computer science is the study and analysis of data. Bottom line is that
+   it provides ways of storing data and using that data for something else.
+   
+   It is important therefore how we organise data in memory. Especially because
+   the way we organise that data influences they way we retrieve them later.
+
+   Thus the algoriths(instructions) that we desing later will be very dependent
+   on the way that the data itself is organised in the first place.
+   
+   Data structures are relevant because they provide an abstraction to which
+   we see how our data is ogranised in memory. Thus we do not think about
+   the 0s and 1s down in memory but we think an a higher level about how
+   certain groups of data are encapuslated how the different parts of the
+   entire data set relate to each other.
+
+
+2. What is a tree data structure? - definition
+
+ Now a tree data structure is nothing but a different abstraction for how we
+ can think about how data is organised in memory. Trees are linked structures
+ very much like the linked list but different in how the different nodes
+ are "linked" together. 
+
+ We can define a tree recursively :
+ 1 There is a root node which contains pointers to other node.
+ 2. Every other node the root node pointes to is a tree.
+ 3. Every node except the root node has a notion of a parent node.
+
+ In short We have a distinguished node called the root and we have other 
+ trees connected this root  by some edge to r.
+
+
+ Linear structures have their own benefits : they are super useful for problems
+ involving policies( Stacks and Queues kind of questions)
+
+
+
+One common use for trees is the directory structure in Unix. for the path names
+
+3. Why are trees relevant?
+
+ -> Used for data that naturally forms a hierarchy.
+ -> Take advantage of the way we organise to improve searching and sorting.
+-> The have many uses such as the directory structure in Unix
+
+
+4. Types of trees
+
+  We have several different kinds of trees.
+  -> Binary Trees
+-> Binary search Trees
+-> B trees 
+-> Multiway trees
+
+
+We shall concentrate on Binary Trees and  Binary search trees
+
+Binary Tree:
+-----------
+Here each node can have no more than two children
+
+Such a node may be designed as follows:
+
+
+class BinaryNode <T>{
+ T data;
+ BinaryNode left;
+ BinaryNode right;
+}
+
+Given a binary tree there are 3 different ways we might use to traverse  the
+tree. 
+
+1. Inorder : Left tree - The root node - Right tree
+2. Postorder: Left tree - Right tree - RootNode
+3. Preorder : RootNode- Left tree - Right tree
+
+
+Check out : http://www.math.ucla.edu/~wittman/10b.1.10w/Lectures/Lec18.pdf
+For a simple exercise on traversals
+
