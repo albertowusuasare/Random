@@ -1,0 +1,74 @@
+/***************************************************************
+
+Author : Albert Owusu-Asare
+Date   : Sun Mar 29 14:30:52 CDT 2015
+
+This file contains some information about Scheduling Algorithms
+
+****************************************************************/
+
+
+1. What are scheduling algorithms?
+2. Why are they important?
+3. How does one start to formulate their own Algorithms
+
+
+1. What are scheduling algorithms?
+==========================================================
+
+Most of the time it is important for us to schedule. This is even 
+more noticed when we have scarce resources. A typical example 
+of this is CPU scheduling. The operating system juggles thousands of
+processes at once. However even though there is this illusion of 
+several CPUs and memory, there is normally a fixed
+number of CPUs and memory and so processes in reality have to share some 
+of these resources. Sharing then implies that we find a way to express 
+how we choose and pick which jobs gets a shared resource.
+
+This idea can be extended to almost any other scheduling problem.
+
+2. Why are they important?
+=========================================================
+
+Scheduling algorithms are important because they have a lot of 
+applications. The typical ones are scheduling for the CPU, sheduling
+for sports conferences and our personal scheduling.
+
+
+
+3. How does one start to formulate their own Algorithms
+===========================================================
+
+There are three things we normally think about when we think about 
+scheduling algorithms. 
+
+1. The machine Environment
+2. The optimality criterion
+3. The Side constraints
+
+
+-> The Machine Environment:
+Here we figure out how many machines we have? How many jobs can this 
+machine execute at time This normally boils down to whether we have 
+serial or parallel machine.
+
+-> The optimality criterion : 
+What is the notion of optimal? The overall goal of every sheduling algorithm
+is to produce a good algorithm. However good may be very broad and we most
+of the time have to specify what it is we mean by "good".
+
+We do so by defining a set of criterion that we will use to asess optimality.
+These criterion could be any of or a combination of the following:
+
+i) Throughput : increasing the total amount of jobs we execute in a given time.
+ii) Turnaround time : We may want to decrement the turnaround time ( thus the 
+                      time taken to complete a process.
+iii) Response time : the time taken to respond to a client
+
+-> The side constraints: These might be additional constraints on the 
+       	    		 environment. We could specify whether or not
+ 			 preemption is allowed. We might consider if there
+                         is a logical dependence between jobs or even if there
+			 are differnt arrival times of jobs.
+
+In such logical dependence  we need some notion of a partial ordering on jobs.
