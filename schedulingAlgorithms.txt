@@ -72,3 +72,6 @@ iii) Response time : the time taken to respond to a client
 			 are differnt arrival times of jobs.
 
 In such logical dependence  we need some notion of a partial ordering on jobs.
+
+
+Problems to be investigated soon convoy effect
