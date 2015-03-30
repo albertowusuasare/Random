@@ -18,3 +18,54 @@ Threads
    and in C.
 4. What are some of the common concurrency problems?
 
+
+1. What is concurrency?
+
+-> join causes this particular thread to wait until some other Thread
+   is done executing.
+
+
+Thread in java a no different from threads in c etc. The difference here
+is that the JVM provides the needed abstractions such that the java programmer
+need not know exactly how the threads are being implemented by the particular
+operating system.
+
+Within java each thread has a stack in the JVM and does its own business.
+Since the JVM is built on top of the kernel we realise that different kernels
+treat threads differently.
+
+For example when we set the priority level of some particular thread in the JVM 
+to say 3. The actual thread that is mapped to in the kernel may have some other 
+spectrum of priorities which 3 will be mapped to. This mapping will be 
+different for say solaris, linux ,windows.
+
+
+
+2. The problem :
+
+When two or more threads are trying to modify some shared memory resource,
+we find that there could be problems due to interrupts.
+
+For example with two threads trying to change a global varible by adding
+one a 1000 times, we expect the final result to be 3.
+
+We realize however that the simple intruction of adding 1 to a variable 
+may not be as atomic as we think. In fact in the x86 architecture
+this occurs in 3 steps :
+
+
+We load the data from some part of memory(the control block takes care of this).
+We then move it to the register and then add 1 
+Transfer back our results into the memory block before.
+
+During those three steps anything can happen and we will have problems.
+
+This problem here is called race condiition: Thus when two or more threads
+are trying to access the same resource and modify it and the final result is 
+depending on how those threads are scheduled.
+
+
+-> We can solve our above problem by having more atomic instructions:
+-> Mutual e
+
+
