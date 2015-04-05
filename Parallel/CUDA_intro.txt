@@ -1,0 +1,20 @@
+
+GPUs were primarily created for graphics processing. It was in high demand by 
+the video gaming industry and 3d graphics because it accelerated how such graphics
+are displayed and accelerated the computation of images.
+Very soon this capablility of the GPU to perform billions of computations
+were exploited by other fields outside of Graphics. 
+
+Due to the fact that GPU's support highly parallelised computations,
+we found it in use by combining it with sequential machines and designating 
+heavy calculations to it. It is especially useful when we have the same function
+and yet different data supplied to it. 
+
+We were allowed to explore this capability in our image processing 
+
+
+-> A cuda program consist of two parts. The serialized code and the parallel 
+code. 
+=> The typical example to use is the classic matrix multiplication problem.
+   We could for instance designate different threads to take care of single
+   elements in the resultant data structure
