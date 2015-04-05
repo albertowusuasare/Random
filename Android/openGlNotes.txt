@@ -1,0 +1,80 @@
+/**********************************************************
+
+Authors         : Albert Owusu-Asare & Yazan Kittaneh
+Date Created   : Sat Apr  4 22:48:10 CDT 2015
+
+This file contains introductory  information about OpenGl.
+
+
+**********************************************************/
+
+
+
+/*********************
+	Contents
+**********************/
+
+
+1. What is OpenGl?  : Pre Open Gl, Importance, what did it change,
+2. OpenGl and Android : 
+   - Explore Android Canvas. 
+   - Is OpenGl any better?
+   - Implementation of OpenGl in Android
+3. Keywords
+   
+
+
+1. What is OpenGl?  : Pre Open Gl, Importance, what did it change
+===================================================================
+
+OpenGl simply put is  a software interface to graphics hardware. It is known 
+to be highly portable and it is the most widly used API in the graphics industry.
+
+It is important to note that OpenGl is not a programming language. 
+It is a rather a libray whose functions can be called in programs.
+
+OpenGL is used in CAD engineering, modelling programs and 3D graphics with 
+consumer and business applications.
+
+OpenGl works as follows:
+----------------------
+
+OpenGl is a procedural library. That is the programmer calls functions after functions
+to achieve a certain appearance or effect.  Such commands are used to draw primitives
+such as points, lines and polygons in 2D or 3D.
+
+The operating system supplies its own API used to create graphics. For example
+in Windows this API is the Graphical Device  Interface (GDI). The interfaces allow
+us to draw 2D lines, points and so on. 
+
+For a software implementation of OpenGl, OpenGL receives requests from an application
+and contructs the image. The OpenGl functions call the underlying implmenatation
+of the respective call in the Graphics interface of the OS and the image are displayed
+on the monitor.
+
+
+For a hardware implementation of OpenGl, a driver serves as the underlying interface.
+Requests are not forwarded to some software API from the OS (such as the GDI),
+rather such hardware drivers interfaces directly with the graphics display 
+hardware.
+
+Note that the hardware implementations far outperform software-only implementation
+
+
+Advantages 
+------------
+* Easy porting : It is easier to port OpenGl code from one platform to another. 
+  For example, openGl defines its own data types.
+* Platform independence : The API does not provide functions that are closely
+    	   		  tied to the duties of the operating system.For instance
+			  window management is never done through OpenGl API calls.
+			  The enables the a platform independent abstraction
+			  of the graphics hardware.
+* Scalable : OpenGL API applications can run on systems of varying sizes and 
+             computing power.
+* Well documented
+3. Keywords
+===========
+
+Render : To turn some geometric description into an image on a screen
+Pipeline : Process it takes to render images on the display
